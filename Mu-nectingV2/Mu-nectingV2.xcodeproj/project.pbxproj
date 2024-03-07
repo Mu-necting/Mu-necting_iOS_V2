@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B39B07602B99C41100C20EB1 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39B075F2B99C41100C20EB1 /* TabBarViewController.swift */; };
+		B39B07622B99C42700C20EB1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39B07612B99C42700C20EB1 /* HomeViewController.swift */; };
+		B39B07642B99C43400C20EB1 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39B07632B99C43400C20EB1 /* MapViewController.swift */; };
+		B39B07662B99C44200C20EB1 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39B07652B99C44200C20EB1 /* UploadViewController.swift */; };
+		B39B07682B99C45300C20EB1 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39B07672B99C45300C20EB1 /* MyPageViewController.swift */; };
 		D2F0C26B2B947C8A00683E4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F0C26A2B947C8A00683E4A /* AppDelegate.swift */; };
 		D2F0C26D2B947C8A00683E4A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F0C26C2B947C8A00683E4A /* SceneDelegate.swift */; };
 		D2F0C26F2B947C8A00683E4A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F0C26E2B947C8A00683E4A /* ViewController.swift */; };
@@ -35,6 +40,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B39B075F2B99C41100C20EB1 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		B39B07612B99C42700C20EB1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B39B07632B99C43400C20EB1 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		B39B07652B99C44200C20EB1 /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
+		B39B07672B99C45300C20EB1 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 		D2F0C2672B947C8A00683E4A /* Mu-nectingV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mu-nectingV2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2F0C26A2B947C8A00683E4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2F0C26C2B947C8A00683E4A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +113,11 @@
 				D2F0C2732B947C8B00683E4A /* Assets.xcassets */,
 				D2F0C2752B947C8B00683E4A /* LaunchScreen.storyboard */,
 				D2F0C2782B947C8B00683E4A /* Info.plist */,
+				B39B075F2B99C41100C20EB1 /* TabBarViewController.swift */,
+				B39B07612B99C42700C20EB1 /* HomeViewController.swift */,
+				B39B07632B99C43400C20EB1 /* MapViewController.swift */,
+				B39B07652B99C44200C20EB1 /* UploadViewController.swift */,
+				B39B07672B99C45300C20EB1 /* MyPageViewController.swift */,
 			);
 			path = "Mu-nectingV2";
 			sourceTree = "<group>";
@@ -254,9 +269,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B39B07622B99C42700C20EB1 /* HomeViewController.swift in Sources */,
+				B39B07662B99C44200C20EB1 /* UploadViewController.swift in Sources */,
+				B39B07642B99C43400C20EB1 /* MapViewController.swift in Sources */,
+				B39B07602B99C41100C20EB1 /* TabBarViewController.swift in Sources */,
 				D2F0C26F2B947C8A00683E4A /* ViewController.swift in Sources */,
 				D2F0C26B2B947C8A00683E4A /* AppDelegate.swift in Sources */,
 				D2F0C26D2B947C8A00683E4A /* SceneDelegate.swift in Sources */,
+				B39B07682B99C45300C20EB1 /* MyPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

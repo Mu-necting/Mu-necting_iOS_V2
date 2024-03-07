@@ -20,6 +20,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let navigationController = UINavigationController(rootViewController : ViewController())
         
+        //TabBar 적용시 사용
+        //let navigationController = UINavigationController(rootViewController : TabBarViewController())
+        
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.windowScene = windowScene
         window?.rootViewController = navigationController
