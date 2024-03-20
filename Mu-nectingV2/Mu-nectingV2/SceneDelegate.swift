@@ -25,7 +25,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.windowScene = windowScene
+        
+        //기본 설정값
         window?.rootViewController = navigationController
+        
+        //Tabbar 적용시 사용
+        //window?.rootViewController = TabBarViewController()
+        
         window?.makeKeyAndVisible()
     }
 

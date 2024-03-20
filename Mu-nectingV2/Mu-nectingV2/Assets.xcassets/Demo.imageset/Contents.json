@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "demo.png",
+      "filename" : "jazz.jpeg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "demo 1.png",
+      "filename" : "jazz 1.jpeg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "demo 2.png",
+      "filename" : "jazz 2.jpeg",
       "idiom" : "universal",
       "scale" : "3x"
     }

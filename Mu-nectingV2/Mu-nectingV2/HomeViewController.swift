@@ -38,9 +38,9 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         configureBackground()
         configureGenreButtons()
+        configureAlbumCoverImage()
         configureDistanceDropdownButton()
         configureDistanceDropdownTableView()
-        configureAlbumCoverImage()
         configureAlbumInfo() //곡 제목 및 가수
         configureMusicSlider() //곡 진행 정도
         configureInterationButtons()
@@ -48,7 +48,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        // 여기서도 뷰의 레이아웃이 결정된 후에 cornerRadius를 설정할 수 있습니다.
+        //뷰의 레이아웃이 결정된 후에 cornerRadius 설정
         if let albumImage = view.subviews.compactMap({ $0 as? UIImageView }).first {
             albumImage.layer.cornerRadius = albumImage.frame.size.width / 2
         }
@@ -77,6 +77,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         genreScrollView.showsHorizontalScrollIndicator = false
         
         NSLayoutConstraint.activate([
+            //genreScrollView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: -50),
             genreScrollView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             genreScrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 90),
             genreScrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
@@ -151,7 +152,6 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     //거리드롭다운테이블뷰
     func configureDistanceDropdownTableView() {
-        
         distanceDropdownTableView.translatesAutoresizingMaskIntoConstraints = false
         distanceDropdownTableView.delegate = self
         distanceDropdownTableView.dataSource = self
@@ -265,12 +265,16 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         NSLayoutConstraint.activate([
             likeButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 100),
             likeButton.topAnchor.constraint(equalTo: musicSlider.bottomAnchor, constant: 40),
+            //likeButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -110),
             
             youtubeButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             youtubeButton.topAnchor.constraint(equalTo: musicSlider.bottomAnchor, constant: 40),
-            
+            //youtubeButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -110),
+
             commentButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -100),
-            commentButton.topAnchor.constraint(equalTo: musicSlider.bottomAnchor, constant: 40)
+            commentButton.topAnchor.constraint(equalTo: musicSlider.bottomAnchor, constant: 40),
+            //commentButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -110)
+
         ])
         
     }
