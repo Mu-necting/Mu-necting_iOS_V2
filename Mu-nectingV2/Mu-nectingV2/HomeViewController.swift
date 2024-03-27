@@ -77,7 +77,6 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         genreScrollView.showsHorizontalScrollIndicator = false
         
         NSLayoutConstraint.activate([
-            //genreScrollView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: -50),
             genreScrollView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             genreScrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 90),
             genreScrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
@@ -88,47 +87,48 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         var previousButton: UIButton?
         
         for (index, title) in buttonTitles.enumerated() {
-            let button = UIButton(type: .system)
-            button.setTitle(title, for: .normal)
-            button.backgroundColor = UIColor.white.withAlphaComponent(0.2)
-            button.setTitleColor(.white, for: .normal)
-            button.layer.cornerRadius = 18.5
-            button.translatesAutoresizingMaskIntoConstraints = false
-            genreScrollView.addSubview(button)
-            genreButtons.append(button)
+            let genreButton = UIButton()
+            genreButton.setTitle(title, for: .normal)
+            genreButton.titleLabel?.font = UIFont.systemFont(ofSize: 16)
+            genreButton.backgroundColor = UIColor.white.withAlphaComponent(0.2)
+            genreButton.setTitleColor(.white, for: .normal)
+            genreButton.layer.cornerRadius = 18.5
+            genreButton.translatesAutoresizingMaskIntoConstraints = false
+            genreScrollView.addSubview(genreButton)
+            genreButtons.append(genreButton)
             
             //그림자 효과
-            button.layer.shadowColor = UIColor.black.cgColor //그림자 색
-            button.layer.shadowOpacity = 0.1 //투명도
-            button.layer.shadowOffset = CGSize(width: 0, height: 4) //가로 및 세로 방향
-            button.layer.shadowRadius = 2 //퍼짐 정도
-            button.clipsToBounds = false
+            genreButton.layer.shadowColor = UIColor.black.cgColor //그림자 색
+            genreButton.layer.shadowOpacity = 0.1 //투명도
+            genreButton.layer.shadowOffset = CGSize(width: 0, height: 4) //가로 및 세로 방향
+            genreButton.layer.shadowRadius = 2 //퍼짐 정도
+            genreButton.clipsToBounds = false
 
             NSLayoutConstraint.activate([
-                button.topAnchor.constraint(equalTo: genreScrollView.topAnchor),
-                button.bottomAnchor.constraint(equalTo: genreScrollView.bottomAnchor),
-                button.heightAnchor.constraint(equalTo: genreScrollView.heightAnchor),
-                button.widthAnchor.constraint(equalToConstant: 80) // 버튼 너비 설정
+                genreButton.topAnchor.constraint(equalTo: genreScrollView.topAnchor),
+                genreButton.bottomAnchor.constraint(equalTo: genreScrollView.bottomAnchor),
+                genreButton.heightAnchor.constraint(equalTo: genreScrollView.heightAnchor),
+                genreButton.widthAnchor.constraint(equalToConstant: 80) // 버튼 너비 설정
             ])
             
             if let previous = previousButton {
                 //이전 버튼이 있다면, 현재 버튼을 이전 버튼의 오른쪽에 위치
-                button.leadingAnchor.constraint(equalTo: previous.trailingAnchor, constant: 10).isActive = true
+                genreButton.leadingAnchor.constraint(equalTo: previous.trailingAnchor, constant: 10).isActive = true
             } else {
                 //첫 번째 버튼 -> 스크롤 뷰의 leading에 위치
-                button.leadingAnchor.constraint(equalTo: genreScrollView.contentLayoutGuide.leadingAnchor, constant: 10).isActive = true
+                genreButton.leadingAnchor.constraint(equalTo: genreScrollView.contentLayoutGuide.leadingAnchor, constant: 10).isActive = true
             }
             
             //마지막 버튼 -> 스크롤 뷰의 trailing에 위치
             if index == buttonTitles.count - 1 {
-                button.trailingAnchor.constraint(equalTo: genreScrollView.contentLayoutGuide.trailingAnchor, constant: -10).isActive = true
+                genreButton.trailingAnchor.constraint(equalTo: genreScrollView.contentLayoutGuide.trailingAnchor, constant: -10).isActive = true
             }
             
             //버튼 탭 액션 설정
-            button.addTarget(self, action: #selector(genreButtonTapped), for: .touchUpInside)
+            genreButton.addTarget(self, action: #selector(genreButtonTapped), for: .touchUpInside)
             
             //이전 버튼을 현재 버튼으로 업데이트
-            previousButton = button
+            previousButton = genreButton
         }
     }
     
@@ -137,12 +137,14 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         distanceDropdownButton.translatesAutoresizingMaskIntoConstraints = false
         distanceDropdownButton.setTitle("100m ▼", for: .normal)
+        distanceDropdownButton.titleLabel?.font = UIFont.systemFont(ofSize: 20)
         distanceDropdownButton.setTitleColor(.white, for: .normal)
         distanceDropdownButton.addTarget(self, action: #selector(distanceDropdownButtonTapped), for: .touchUpInside)
         
         view.addSubview(distanceDropdownButton)
         
         NSLayoutConstraint.activate([
+            //distanceDropdownButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: -50),
             distanceDropdownButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             distanceDropdownButton.leadingAnchor.constraint(equalTo: genreScrollView.leadingAnchor, constant: -80), // 스크롤뷰 왼쪽 옆에 배치
             distanceDropdownButton.widthAnchor.constraint(equalToConstant: 80),
@@ -200,6 +202,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     func configureAlbumInfo() {
         
         titleLabel.text = "곡 제목"
+        titleLabel.font = UIFont.boldSystemFont(ofSize: 30)
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(titleLabel)
         
@@ -215,6 +218,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         titleLabel.textAlignment = .center
         
         artistLabel.text = "가수 이름"
+        artistLabel.font = UIFont.systemFont(ofSize: 20)
         artistLabel.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(artistLabel)
         
@@ -274,7 +278,6 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
             commentButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -100),
             commentButton.topAnchor.constraint(equalTo: musicSlider.bottomAnchor, constant: 40),
             //commentButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -110)
-
         ])
         
     }
@@ -283,6 +286,14 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     @objc func genreButtonTapped(sender: UIButton) {
         guard let buttonTitle = sender.currentTitle else { return }
         print("\(buttonTitle) 버튼이 탭되었습니다")
+
+        // 다른 모든 버튼의 선택 상태를 해제하고 배경색을 흰색으로 설정합니다.
+        genreButtons.forEach {
+            $0.isSelected = false
+        }
+        
+        sender.isSelected.toggle() // 탭된 버튼의 선택 상태를 토글합니다.
+        sender.setTitleColor(UIColor(named: "MapGenreSelected"), for: .selected)
     }
     
     //거리버튼동작함수
