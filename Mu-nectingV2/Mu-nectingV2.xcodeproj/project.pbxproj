@@ -70,6 +70,31 @@
 		B39B07632B99C43400C20EB1 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		B39B07652B99C44200C20EB1 /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 		B39B07672B99C45300C20EB1 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
+		D2099E7B2BF35E8900C8D0F1 /* ListeningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListeningViewController.swift; sourceTree = "<group>"; };
+		D2142A102BDEDF1A0079E5D0 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D2142A142BDEDFA30079E5D0 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		D2142A162BDEE3D70079E5D0 /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
+		D2142A182BDEE5910079E5D0 /* EmailLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailLoginViewController.swift; sourceTree = "<group>"; };
+		D2142A1C2BDEEC450079E5D0 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		D27BFACF2C05E42B00C0504F /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		D27BFAD22C05FB1200C0504F /* PlayListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListViewController.swift; sourceTree = "<group>"; };
+		D27BFAD42C072EAF00C0504F /* HorizontalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalTableViewCell.swift; sourceTree = "<group>"; };
+		D27BFAD62C0731E800C0504F /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		D2C30A0D2C450A14003C0CD4 /* AddNewPlayListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewPlayListViewController.swift; sourceTree = "<group>"; };
+		D2C30A0F2C4513A4003C0CD4 /* AddSongViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSongViewController.swift; sourceTree = "<group>"; };
+		D2C30A132C4E3C78003C0CD4 /* PlayListEditModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListEditModalViewController.swift; sourceTree = "<group>"; };
+		D2C30A162C4E4384003C0CD4 /* IconTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconTableViewCell.swift; sourceTree = "<group>"; };
+		D2C30A182C4E69B2003C0CD4 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		D2C30A1A2C4E7068003C0CD4 /* PlayListEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListEditViewController.swift; sourceTree = "<group>"; };
+		D2C30A1C2C4E75D3003C0CD4 /* AlbumImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumImageView.swift; sourceTree = "<group>"; };
+		D2C30A1E2C4E7AFF003C0CD4 /* PlayList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayList.swift; sourceTree = "<group>"; };
+		D2C30A202C4E7E48003C0CD4 /* PlaylistTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistTableViewCell.swift; sourceTree = "<group>"; };
+		D2C30A222C4E7EFF003C0CD4 /* PlayListTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListTableView.swift; sourceTree = "<group>"; };
+		D2D5933E2BB338150010D29D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D2D593432BB339240010D29D /* MyPageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageTableViewCell.swift; sourceTree = "<group>"; };
+		D2D593452BB46CDF0010D29D /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
+		D2D593472BB59FEC0010D29D /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		D2D593492BB5A3A40010D29D /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		D2F0C2672B947C8A00683E4A /* Mu-nectingV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mu-nectingV2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2F0C26A2B947C8A00683E4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2F0C26C2B947C8A00683E4A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +134,101 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D2099E7A2BF35E6E00C8D0F1 /* Listening */ = {
+			isa = PBXGroup;
+			children = (
+				D2099E7B2BF35E8900C8D0F1 /* ListeningViewController.swift */,
+			);
+			path = Listening;
+			sourceTree = "<group>";
+		};
+		D2142A0F2BDEDE6E0079E5D0 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				D2142A102BDEDF1A0079E5D0 /* LoginViewController.swift */,
+				D2142A182BDEE5910079E5D0 /* EmailLoginViewController.swift */,
+				D2142A1C2BDEEC450079E5D0 /* SignUpViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		D2142A132BDEDF8D0079E5D0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D2142A142BDEDFA30079E5D0 /* UIColor.swift */,
+				D2142A162BDEE3D70079E5D0 /* UILabel.swift */,
+				D2C30A182C4E69B2003C0CD4 /* UIView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D27BFAD12C05FAF900C0504F /* PlayList */ = {
+			isa = PBXGroup;
+			children = (
+				D27BFAD22C05FB1200C0504F /* PlayListViewController.swift */,
+				D2C30A1A2C4E7068003C0CD4 /* PlayListEditViewController.swift */,
+				D2C30A1C2C4E75D3003C0CD4 /* AlbumImageView.swift */,
+			);
+			path = PlayList;
+			sourceTree = "<group>";
+		};
+		D2C30A122C4E3C51003C0CD4 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				D2C30A132C4E3C78003C0CD4 /* PlayListEditModalViewController.swift */,
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		D2C30A152C4E436F003C0CD4 /* Table */ = {
+			isa = PBXGroup;
+			children = (
+				D2C30A162C4E4384003C0CD4 /* IconTableViewCell.swift */,
+				D2C30A202C4E7E48003C0CD4 /* PlaylistTableViewCell.swift */,
+				D2C30A222C4E7EFF003C0CD4 /* PlayListTableView.swift */,
+			);
+			path = Table;
+			sourceTree = "<group>";
+		};
+		D2D5933D2BB337C50010D29D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D2D5933E2BB338150010D29D /* User.swift */,
+				D2D593452BB46CDF0010D29D /* Music.swift */,
+				D2C30A1E2C4E7AFF003C0CD4 /* PlayList.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D2D593412BB338F80010D29D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D2C30A152C4E436F003C0CD4 /* Table */,
+				D2C30A122C4E3C51003C0CD4 /* Modal */,
+				D27BFAD12C05FAF900C0504F /* PlayList */,
+				D2099E7A2BF35E6E00C8D0F1 /* Listening */,
+				D2142A0F2BDEDE6E0079E5D0 /* Login */,
+				D2D593422BB338FE0010D29D /* MyPage */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D2D593422BB338FE0010D29D /* MyPage */ = {
+			isa = PBXGroup;
+			children = (
+				B39B07672B99C45300C20EB1 /* MyPageViewController.swift */,
+				D2D593432BB339240010D29D /* MyPageTableViewCell.swift */,
+				D2D593472BB59FEC0010D29D /* ProfileViewController.swift */,
+				D2D593492BB5A3A40010D29D /* SettingViewController.swift */,
+				D27BFACF2C05E42B00C0504F /* SearchViewController.swift */,
+				D27BFAD42C072EAF00C0504F /* HorizontalTableViewCell.swift */,
+				D27BFAD62C0731E800C0504F /* ImageCollectionViewCell.swift */,
+				D2C30A0D2C450A14003C0CD4 /* AddNewPlayListViewController.swift */,
+				D2C30A0F2C4513A4003C0CD4 /* AddSongViewController.swift */,
+			);
+			path = MyPage;
+			sourceTree = "<group>";
+		};
 		D2F0C25E2B947C8A00683E4A = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +252,9 @@
 		D2F0C2692B947C8A00683E4A /* Mu-nectingV2 */ = {
 			isa = PBXGroup;
 			children = (
+				D2142A132BDEDF8D0079E5D0 /* Extensions */,
+				D2D593412BB338F80010D29D /* View */,
+				D2D5933D2BB337C50010D29D /* Model */,
 				D2F0C26A2B947C8A00683E4A /* AppDelegate.swift */,
 				D2F0C26C2B947C8A00683E4A /* SceneDelegate.swift */,
 				D2F0C26E2B947C8A00683E4A /* ViewController.swift */,
@@ -142,7 +265,6 @@
 				B39B07612B99C42700C20EB1 /* HomeViewController.swift */,
 				B39B07632B99C43400C20EB1 /* MapViewController.swift */,
 				B39B07652B99C44200C20EB1 /* UploadViewController.swift */,
-				B39B07672B99C45300C20EB1 /* MyPageViewController.swift */,
 			);
 			path = "Mu-nectingV2";
 			sourceTree = "<group>";
@@ -294,14 +416,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2142A112BDEDF1A0079E5D0 /* LoginViewController.swift in Sources */,
 				B39B07622B99C42700C20EB1 /* HomeViewController.swift in Sources */,
+				D2C30A1D2C4E75D3003C0CD4 /* AlbumImageView.swift in Sources */,
 				B39B07662B99C44200C20EB1 /* UploadViewController.swift in Sources */,
+				D2C30A1B2C4E7068003C0CD4 /* PlayListEditViewController.swift in Sources */,
+				D2C30A232C4E7EFF003C0CD4 /* PlayListTableView.swift in Sources */,
 				B39B07642B99C43400C20EB1 /* MapViewController.swift in Sources */,
+				D2142A152BDEDFA30079E5D0 /* UIColor.swift in Sources */,
+				D2D5934A2BB5A3A40010D29D /* SettingViewController.swift in Sources */,
+				D2142A1D2BDEEC450079E5D0 /* SignUpViewController.swift in Sources */,
+				D2099E7C2BF35E8900C8D0F1 /* ListeningViewController.swift in Sources */,
+				D2142A172BDEE3D70079E5D0 /* UILabel.swift in Sources */,
+				D2C30A212C4E7E49003C0CD4 /* PlaylistTableViewCell.swift in Sources */,
 				B39B07602B99C41100C20EB1 /* TabBarViewController.swift in Sources */,
+				D2C30A142C4E3C78003C0CD4 /* PlayListEditModalViewController.swift in Sources */,
+				D2C30A172C4E4384003C0CD4 /* IconTableViewCell.swift in Sources */,
+				D27BFAD02C05E42B00C0504F /* SearchViewController.swift in Sources */,
 				D2F0C26F2B947C8A00683E4A /* ViewController.swift in Sources */,
+				D2D5933F2BB338150010D29D /* User.swift in Sources */,
+				D2C30A1F2C4E7AFF003C0CD4 /* PlayList.swift in Sources */,
+				D2C30A0E2C450A14003C0CD4 /* AddNewPlayListViewController.swift in Sources */,
+				D2D593482BB59FEC0010D29D /* ProfileViewController.swift in Sources */,
+				D27BFAD32C05FB1200C0504F /* PlayListViewController.swift in Sources */,
+				D2D593442BB339240010D29D /* MyPageTableViewCell.swift in Sources */,
+				D27BFAD72C0731E800C0504F /* ImageCollectionViewCell.swift in Sources */,
+				D2142A192BDEE5910079E5D0 /* EmailLoginViewController.swift in Sources */,
+				D2D593462BB46CE00010D29D /* Music.swift in Sources */,
 				D2F0C26B2B947C8A00683E4A /* AppDelegate.swift in Sources */,
 				D2F0C26D2B947C8A00683E4A /* SceneDelegate.swift in Sources */,
+				D2C30A192C4E69B2003C0CD4 /* UIView.swift in Sources */,
 				B39B07682B99C45300C20EB1 /* MyPageViewController.swift in Sources */,
+				D2C30A102C4513A4003C0CD4 /* AddSongViewController.swift in Sources */,
+				D27BFAD52C072EAF00C0504F /* HorizontalTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
