@@ -37,6 +37,12 @@
 		D2D593462BB46CE00010D29D /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D593452BB46CDF0010D29D /* Music.swift */; };
 		D2D593482BB59FEC0010D29D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D593472BB59FEC0010D29D /* ProfileViewController.swift */; };
 		D2D5934A2BB5A3A40010D29D /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D593492BB5A3A40010D29D /* SettingViewController.swift */; };
+		D2E404D12C57C0AE005B085D /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = D2E404D02C57C0AE005B085D /* Moya */; };
+		D2E404D32C57C0CC005B085D /* BaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E404D22C57C0CC005B085D /* BaseRepository.swift */; };
+		D2E404D52C57C119005B085D /* BaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E404D42C57C119005B085D /* BaseAPI.swift */; };
+		D2E404D72C57C368005B085D /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E404D62C57C368005B085D /* BaseResponse.swift */; };
+		D2E404DA2C57C72C005B085D /* ExampleRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E404D92C57C72C005B085D /* ExampleRepository.swift */; };
+		D2E404DC2C57C752005B085D /* ExampleAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E404DB2C57C752005B085D /* ExampleAPI.swift */; };
 		D2F0C26B2B947C8A00683E4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F0C26A2B947C8A00683E4A /* AppDelegate.swift */; };
 		D2F0C26D2B947C8A00683E4A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F0C26C2B947C8A00683E4A /* SceneDelegate.swift */; };
 		D2F0C26F2B947C8A00683E4A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F0C26E2B947C8A00683E4A /* ViewController.swift */; };
@@ -95,6 +101,11 @@
 		D2D593452BB46CDF0010D29D /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
 		D2D593472BB59FEC0010D29D /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		D2D593492BB5A3A40010D29D /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		D2E404D22C57C0CC005B085D /* BaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRepository.swift; sourceTree = "<group>"; };
+		D2E404D42C57C119005B085D /* BaseAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAPI.swift; sourceTree = "<group>"; };
+		D2E404D62C57C368005B085D /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
+		D2E404D92C57C72C005B085D /* ExampleRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleRepository.swift; sourceTree = "<group>"; };
+		D2E404DB2C57C752005B085D /* ExampleAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleAPI.swift; sourceTree = "<group>"; };
 		D2F0C2672B947C8A00683E4A /* Mu-nectingV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mu-nectingV2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2F0C26A2B947C8A00683E4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2F0C26C2B947C8A00683E4A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -114,6 +125,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2E404D12C57C0AE005B085D /* Moya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,6 +241,26 @@
 			path = MyPage;
 			sourceTree = "<group>";
 		};
+		D2E404CE2C57BD70005B085D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				D2E404D82C57C700005B085D /* Example */,
+				D2E404D22C57C0CC005B085D /* BaseRepository.swift */,
+				D2E404D42C57C119005B085D /* BaseAPI.swift */,
+				D2E404D62C57C368005B085D /* BaseResponse.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		D2E404D82C57C700005B085D /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				D2E404D92C57C72C005B085D /* ExampleRepository.swift */,
+				D2E404DB2C57C752005B085D /* ExampleAPI.swift */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
 		D2F0C25E2B947C8A00683E4A = {
 			isa = PBXGroup;
 			children = (
@@ -252,6 +284,7 @@
 		D2F0C2692B947C8A00683E4A /* Mu-nectingV2 */ = {
 			isa = PBXGroup;
 			children = (
+				D2E404CE2C57BD70005B085D /* Network */,
 				D2142A132BDEDF8D0079E5D0 /* Extensions */,
 				D2D593412BB338F80010D29D /* View */,
 				D2D5933D2BB337C50010D29D /* Model */,
@@ -302,6 +335,9 @@
 			dependencies = (
 			);
 			name = "Mu-nectingV2";
+			packageProductDependencies = (
+				D2E404D02C57C0AE005B085D /* Moya */,
+			);
 			productName = "Mu-nectingV2";
 			productReference = D2F0C2672B947C8A00683E4A /* Mu-nectingV2.app */;
 			productType = "com.apple.product-type.application";
@@ -374,6 +410,9 @@
 				Base,
 			);
 			mainGroup = D2F0C25E2B947C8A00683E4A;
+			packageReferences = (
+				D2E404CF2C57C0AE005B085D /* XCRemoteSwiftPackageReference "Moya" */,
+			);
 			productRefGroup = D2F0C2682B947C8A00683E4A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -427,6 +466,7 @@
 				D2D5934A2BB5A3A40010D29D /* SettingViewController.swift in Sources */,
 				D2142A1D2BDEEC450079E5D0 /* SignUpViewController.swift in Sources */,
 				D2099E7C2BF35E8900C8D0F1 /* ListeningViewController.swift in Sources */,
+				D2E404DC2C57C752005B085D /* ExampleAPI.swift in Sources */,
 				D2142A172BDEE3D70079E5D0 /* UILabel.swift in Sources */,
 				D2C30A212C4E7E49003C0CD4 /* PlaylistTableViewCell.swift in Sources */,
 				B39B07602B99C41100C20EB1 /* TabBarViewController.swift in Sources */,
@@ -440,8 +480,10 @@
 				D2D593482BB59FEC0010D29D /* ProfileViewController.swift in Sources */,
 				D27BFAD32C05FB1200C0504F /* PlayListViewController.swift in Sources */,
 				D2D593442BB339240010D29D /* MyPageTableViewCell.swift in Sources */,
+				D2E404D32C57C0CC005B085D /* BaseRepository.swift in Sources */,
 				D27BFAD72C0731E800C0504F /* ImageCollectionViewCell.swift in Sources */,
 				D2142A192BDEE5910079E5D0 /* EmailLoginViewController.swift in Sources */,
+				D2E404D72C57C368005B085D /* BaseResponse.swift in Sources */,
 				D2D593462BB46CE00010D29D /* Music.swift in Sources */,
 				D2F0C26B2B947C8A00683E4A /* AppDelegate.swift in Sources */,
 				D2F0C26D2B947C8A00683E4A /* SceneDelegate.swift in Sources */,
@@ -449,6 +491,8 @@
 				B39B07682B99C45300C20EB1 /* MyPageViewController.swift in Sources */,
 				D2C30A102C4513A4003C0CD4 /* AddSongViewController.swift in Sources */,
 				D27BFAD52C072EAF00C0504F /* HorizontalTableViewCell.swift in Sources */,
+				D2E404DA2C57C72C005B085D /* ExampleRepository.swift in Sources */,
+				D2E404D52C57C119005B085D /* BaseAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -779,6 +823,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D2E404CF2C57C0AE005B085D /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D2E404D02C57C0AE005B085D /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D2E404CF2C57C0AE005B085D /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D2F0C25F2B947C8A00683E4A /* Project object */;
 }
