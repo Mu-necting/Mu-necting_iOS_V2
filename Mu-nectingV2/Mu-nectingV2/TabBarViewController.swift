@@ -24,7 +24,7 @@ class TabBarViewController: UITabBarController {
         let mypageVC = MyPageViewController()
         mypageVC.tabBarItem = UITabBarItem(title: "마이페이지", image: UIImage(named:"MyPage"), tag: 3)
 
-        let controllers = [homeVC, mapVC, uploadVC, mypageVC].map { UINavigationController(rootViewController: $0) }
+        let controllers = [homeVC, mapVC, uploadVC, mypageVC]
         
         self.setViewControllers(controllers, animated: true)
     }

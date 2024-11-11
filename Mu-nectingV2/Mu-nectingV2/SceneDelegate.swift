@@ -19,13 +19,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
                 
         //TabBar 적용시 사용
-        let navigationController = TabBarViewController()
+        let tabBarController = TabBarViewController()
         
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.windowScene = windowScene
         
         //기본 설정값
-        window?.rootViewController = navigationController
+        window?.rootViewController = tabBarController
         
         //Tabbar 적용시 사용
         //window?.rootViewController = TabBarViewController()
