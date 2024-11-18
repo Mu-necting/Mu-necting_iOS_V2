@@ -12,6 +12,7 @@
 		B39B07642B99C43400C20EB1 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39B07632B99C43400C20EB1 /* MapViewController.swift */; };
 		B39B07662B99C44200C20EB1 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39B07652B99C44200C20EB1 /* UploadViewController.swift */; };
 		B39B07682B99C45300C20EB1 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39B07672B99C45300C20EB1 /* MyPageViewController.swift */; };
+		D20852632CA1917700D3A1CB /* PlayListPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20852622CA1917700D3A1CB /* PlayListPage.swift */; };
 		D2099E7C2BF35E8900C8D0F1 /* ListeningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2099E7B2BF35E8900C8D0F1 /* ListeningViewController.swift */; };
 		D2142A112BDEDF1A0079E5D0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2142A102BDEDF1A0079E5D0 /* LoginViewController.swift */; };
 		D2142A152BDEDFA30079E5D0 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2142A142BDEDFA30079E5D0 /* UIColor.swift */; };
@@ -22,6 +23,28 @@
 		D27BFAD32C05FB1200C0504F /* PlayListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27BFAD22C05FB1200C0504F /* PlayListViewController.swift */; };
 		D27BFAD52C072EAF00C0504F /* HorizontalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27BFAD42C072EAF00C0504F /* HorizontalTableViewCell.swift */; };
 		D27BFAD72C0731E800C0504F /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27BFAD62C0731E800C0504F /* ImageCollectionViewCell.swift */; };
+		D28FC3BD2C7CAD6B00AFF58E /* KakaoSDK in Frameworks */ = {isa = PBXBuildFile; productRef = D28FC3BC2C7CAD6B00AFF58E /* KakaoSDK */; };
+		D28FC3BF2C7CAD6B00AFF58E /* KakaoSDKAuth in Frameworks */ = {isa = PBXBuildFile; productRef = D28FC3BE2C7CAD6B00AFF58E /* KakaoSDKAuth */; };
+		D28FC3C12C7CAD6B00AFF58E /* KakaoSDKCert in Frameworks */ = {isa = PBXBuildFile; productRef = D28FC3C02C7CAD6B00AFF58E /* KakaoSDKCert */; };
+		D28FC3C32C7CAD6B00AFF58E /* KakaoSDKCertCore in Frameworks */ = {isa = PBXBuildFile; productRef = D28FC3C22C7CAD6B00AFF58E /* KakaoSDKCertCore */; };
+		D28FC3C52C7CAD6B00AFF58E /* KakaoSDKCommon in Frameworks */ = {isa = PBXBuildFile; productRef = D28FC3C42C7CAD6B00AFF58E /* KakaoSDKCommon */; };
+		D28FC3C72C7CAD6B00AFF58E /* KakaoSDKFriend in Frameworks */ = {isa = PBXBuildFile; productRef = D28FC3C62C7CAD6B00AFF58E /* KakaoSDKFriend */; };
+		D28FC3C92C7CAD6B00AFF58E /* KakaoSDKFriendCore in Frameworks */ = {isa = PBXBuildFile; productRef = D28FC3C82C7CAD6B00AFF58E /* KakaoSDKFriendCore */; };
+		D28FC3CB2C7CAD6B00AFF58E /* KakaoSDKNavi in Frameworks */ = {isa = PBXBuildFile; productRef = D28FC3CA2C7CAD6B00AFF58E /* KakaoSDKNavi */; };
+		D28FC3CD2C7CAD6B00AFF58E /* KakaoSDKShare in Frameworks */ = {isa = PBXBuildFile; productRef = D28FC3CC2C7CAD6B00AFF58E /* KakaoSDKShare */; };
+		D28FC3CF2C7CAD6B00AFF58E /* KakaoSDKTalk in Frameworks */ = {isa = PBXBuildFile; productRef = D28FC3CE2C7CAD6B00AFF58E /* KakaoSDKTalk */; };
+		D28FC3D12C7CAD6B00AFF58E /* KakaoSDKTemplate in Frameworks */ = {isa = PBXBuildFile; productRef = D28FC3D02C7CAD6B00AFF58E /* KakaoSDKTemplate */; };
+		D28FC3D32C7CAD6B00AFF58E /* KakaoSDKUser in Frameworks */ = {isa = PBXBuildFile; productRef = D28FC3D22C7CAD6B00AFF58E /* KakaoSDKUser */; };
+		D28FC3DC2C85D8E400AFF58E /* LoginAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28FC3DB2C85D8E400AFF58E /* LoginAPI.swift */; };
+		D28FC3DE2C85D8F200AFF58E /* LoginRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28FC3DD2C85D8F200AFF58E /* LoginRepository.swift */; };
+		D28FC3E12C85E2AF00AFF58E /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = D28FC3E02C85E2AF00AFF58E /* FirebaseAnalytics */; };
+		D28FC3E32C85E2AF00AFF58E /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = D28FC3E22C85E2AF00AFF58E /* FirebaseAnalyticsOnDeviceConversion */; };
+		D28FC3E52C85E2AF00AFF58E /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = D28FC3E42C85E2AF00AFF58E /* FirebaseAnalyticsWithoutAdIdSupport */; };
+		D28FC3E72C85E2AF00AFF58E /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = D28FC3E62C85E2AF00AFF58E /* FirebaseAppCheck */; };
+		D28FC3E92C85E2AF00AFF58E /* FirebaseAppDistribution-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = D28FC3E82C85E2AF00AFF58E /* FirebaseAppDistribution-Beta */; };
+		D28FC3EB2C85E2C700AFF58E /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = D28FC3EA2C85E2C700AFF58E /* GoogleSignIn */; };
+		D28FC3ED2C85E2C700AFF58E /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D28FC3EC2C85E2C700AFF58E /* GoogleSignInSwift */; };
+		D28FC3EF2C85E36900AFF58E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D28FC3EE2C85E36900AFF58E /* GoogleService-Info.plist */; };
 		D2C30A0E2C450A14003C0CD4 /* AddNewPlayListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C30A0D2C450A14003C0CD4 /* AddNewPlayListViewController.swift */; };
 		D2C30A102C4513A4003C0CD4 /* AddSongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C30A0F2C4513A4003C0CD4 /* AddSongViewController.swift */; };
 		D2C30A142C4E3C78003C0CD4 /* PlayListEditModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C30A132C4E3C78003C0CD4 /* PlayListEditModalViewController.swift */; };
@@ -34,7 +57,7 @@
 		D2C30A232C4E7EFF003C0CD4 /* PlayListTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C30A222C4E7EFF003C0CD4 /* PlayListTableView.swift */; };
 		D2D5933F2BB338150010D29D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D5933E2BB338150010D29D /* User.swift */; };
 		D2D593442BB339240010D29D /* MyPageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D593432BB339240010D29D /* MyPageTableViewCell.swift */; };
-		D2D593462BB46CE00010D29D /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D593452BB46CDF0010D29D /* Music.swift */; };
+		D2D593462BB46CE00010D29D /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D593452BB46CDF0010D29D /* Track.swift */; };
 		D2D593482BB59FEC0010D29D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D593472BB59FEC0010D29D /* ProfileViewController.swift */; };
 		D2D5934A2BB5A3A40010D29D /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D593492BB5A3A40010D29D /* SettingViewController.swift */; };
 		D2E404D12C57C0AE005B085D /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = D2E404D02C57C0AE005B085D /* Moya */; };
@@ -43,6 +66,11 @@
 		D2E404D72C57C368005B085D /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E404D62C57C368005B085D /* BaseResponse.swift */; };
 		D2E404DA2C57C72C005B085D /* ExampleRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E404D92C57C72C005B085D /* ExampleRepository.swift */; };
 		D2E404DC2C57C752005B085D /* ExampleAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E404DB2C57C752005B085D /* ExampleAPI.swift */; };
+		D2E404E02C6A140B005B085D /* SpotifyImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E404DF2C6A140B005B085D /* SpotifyImage.swift */; };
+		D2E404E22C6A147C005B085D /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E404E12C6A147C005B085D /* Artist.swift */; };
+		D2E404E52C6A16D4005B085D /* MusicHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E404E42C6A16D4005B085D /* MusicHelper.swift */; };
+		D2E404E92C6A1EA4005B085D /* MiniPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E404E82C6A1EA4005B085D /* MiniPlayerView.swift */; };
+		D2E404ED2C6A2D52005B085D /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = D2E404EC2C6A2D52005B085D /* Kingfisher */; };
 		D2F0C26B2B947C8A00683E4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F0C26A2B947C8A00683E4A /* AppDelegate.swift */; };
 		D2F0C26D2B947C8A00683E4A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F0C26C2B947C8A00683E4A /* SceneDelegate.swift */; };
 		D2F0C26F2B947C8A00683E4A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F0C26E2B947C8A00683E4A /* ViewController.swift */; };
@@ -76,6 +104,7 @@
 		B39B07632B99C43400C20EB1 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		B39B07652B99C44200C20EB1 /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 		B39B07672B99C45300C20EB1 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
+		D20852622CA1917700D3A1CB /* PlayListPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListPage.swift; sourceTree = "<group>"; };
 		D2099E7B2BF35E8900C8D0F1 /* ListeningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListeningViewController.swift; sourceTree = "<group>"; };
 		D2142A102BDEDF1A0079E5D0 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D2142A142BDEDFA30079E5D0 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
@@ -86,6 +115,10 @@
 		D27BFAD22C05FB1200C0504F /* PlayListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListViewController.swift; sourceTree = "<group>"; };
 		D27BFAD42C072EAF00C0504F /* HorizontalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalTableViewCell.swift; sourceTree = "<group>"; };
 		D27BFAD62C0731E800C0504F /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		D28FC3D42C7CAE2800AFF58E /* Mu-nectingV2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Mu-nectingV2.entitlements"; sourceTree = "<group>"; };
+		D28FC3DB2C85D8E400AFF58E /* LoginAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAPI.swift; sourceTree = "<group>"; };
+		D28FC3DD2C85D8F200AFF58E /* LoginRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRepository.swift; sourceTree = "<group>"; };
+		D28FC3EE2C85E36900AFF58E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D2C30A0D2C450A14003C0CD4 /* AddNewPlayListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewPlayListViewController.swift; sourceTree = "<group>"; };
 		D2C30A0F2C4513A4003C0CD4 /* AddSongViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSongViewController.swift; sourceTree = "<group>"; };
 		D2C30A132C4E3C78003C0CD4 /* PlayListEditModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListEditModalViewController.swift; sourceTree = "<group>"; };
@@ -98,7 +131,7 @@
 		D2C30A222C4E7EFF003C0CD4 /* PlayListTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListTableView.swift; sourceTree = "<group>"; };
 		D2D5933E2BB338150010D29D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		D2D593432BB339240010D29D /* MyPageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageTableViewCell.swift; sourceTree = "<group>"; };
-		D2D593452BB46CDF0010D29D /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
+		D2D593452BB46CDF0010D29D /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
 		D2D593472BB59FEC0010D29D /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		D2D593492BB5A3A40010D29D /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		D2E404D22C57C0CC005B085D /* BaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRepository.swift; sourceTree = "<group>"; };
@@ -106,6 +139,10 @@
 		D2E404D62C57C368005B085D /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
 		D2E404D92C57C72C005B085D /* ExampleRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleRepository.swift; sourceTree = "<group>"; };
 		D2E404DB2C57C752005B085D /* ExampleAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleAPI.swift; sourceTree = "<group>"; };
+		D2E404DF2C6A140B005B085D /* SpotifyImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyImage.swift; sourceTree = "<group>"; };
+		D2E404E12C6A147C005B085D /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
+		D2E404E42C6A16D4005B085D /* MusicHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicHelper.swift; sourceTree = "<group>"; };
+		D2E404E82C6A1EA4005B085D /* MiniPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniPlayerView.swift; sourceTree = "<group>"; };
 		D2F0C2672B947C8A00683E4A /* Mu-nectingV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mu-nectingV2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2F0C26A2B947C8A00683E4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2F0C26C2B947C8A00683E4A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -125,7 +162,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2E404ED2C6A2D52005B085D /* Kingfisher in Frameworks */,
+				D28FC3C52C7CAD6B00AFF58E /* KakaoSDKCommon in Frameworks */,
+				D28FC3C92C7CAD6B00AFF58E /* KakaoSDKFriendCore in Frameworks */,
 				D2E404D12C57C0AE005B085D /* Moya in Frameworks */,
+				D28FC3C32C7CAD6B00AFF58E /* KakaoSDKCertCore in Frameworks */,
+				D28FC3EB2C85E2C700AFF58E /* GoogleSignIn in Frameworks */,
+				D28FC3CD2C7CAD6B00AFF58E /* KakaoSDKShare in Frameworks */,
+				D28FC3BD2C7CAD6B00AFF58E /* KakaoSDK in Frameworks */,
+				D28FC3E32C85E2AF00AFF58E /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
+				D28FC3ED2C85E2C700AFF58E /* GoogleSignInSwift in Frameworks */,
+				D28FC3BF2C7CAD6B00AFF58E /* KakaoSDKAuth in Frameworks */,
+				D28FC3E52C85E2AF00AFF58E /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
+				D28FC3E12C85E2AF00AFF58E /* FirebaseAnalytics in Frameworks */,
+				D28FC3CB2C7CAD6B00AFF58E /* KakaoSDKNavi in Frameworks */,
+				D28FC3E92C85E2AF00AFF58E /* FirebaseAppDistribution-Beta in Frameworks */,
+				D28FC3CF2C7CAD6B00AFF58E /* KakaoSDKTalk in Frameworks */,
+				D28FC3D32C7CAD6B00AFF58E /* KakaoSDKUser in Frameworks */,
+				D28FC3C12C7CAD6B00AFF58E /* KakaoSDKCert in Frameworks */,
+				D28FC3D12C7CAD6B00AFF58E /* KakaoSDKTemplate in Frameworks */,
+				D28FC3E72C85E2AF00AFF58E /* FirebaseAppCheck in Frameworks */,
+				D28FC3C72C7CAD6B00AFF58E /* KakaoSDKFriend in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,6 +241,15 @@
 			path = PlayList;
 			sourceTree = "<group>";
 		};
+		D28FC3DA2C85D8B400AFF58E /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				D28FC3DB2C85D8E400AFF58E /* LoginAPI.swift */,
+				D28FC3DD2C85D8F200AFF58E /* LoginRepository.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		D2C30A122C4E3C51003C0CD4 /* Modal */ = {
 			isa = PBXGroup;
 			children = (
@@ -206,8 +272,11 @@
 			isa = PBXGroup;
 			children = (
 				D2D5933E2BB338150010D29D /* User.swift */,
-				D2D593452BB46CDF0010D29D /* Music.swift */,
+				D2D593452BB46CDF0010D29D /* Track.swift */,
 				D2C30A1E2C4E7AFF003C0CD4 /* PlayList.swift */,
+				D2E404DF2C6A140B005B085D /* SpotifyImage.swift */,
+				D2E404E12C6A147C005B085D /* Artist.swift */,
+				D20852622CA1917700D3A1CB /* PlayListPage.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -215,6 +284,7 @@
 		D2D593412BB338F80010D29D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D2E404E72C6A1E7D005B085D /* MiniPlayer */,
 				D2C30A152C4E436F003C0CD4 /* Table */,
 				D2C30A122C4E3C51003C0CD4 /* Modal */,
 				D27BFAD12C05FAF900C0504F /* PlayList */,
@@ -244,6 +314,7 @@
 		D2E404CE2C57BD70005B085D /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				D28FC3DA2C85D8B400AFF58E /* Login */,
 				D2E404D82C57C700005B085D /* Example */,
 				D2E404D22C57C0CC005B085D /* BaseRepository.swift */,
 				D2E404D42C57C119005B085D /* BaseAPI.swift */,
@@ -261,6 +332,29 @@
 			path = Example;
 			sourceTree = "<group>";
 		};
+		D2E404E32C6A166A005B085D /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				D2E404E42C6A16D4005B085D /* MusicHelper.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		D2E404E72C6A1E7D005B085D /* MiniPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				D2E404E82C6A1EA4005B085D /* MiniPlayerView.swift */,
+			);
+			path = MiniPlayer;
+			sourceTree = "<group>";
+		};
+		D2E404EB2C6A2D52005B085D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D2F0C25E2B947C8A00683E4A = {
 			isa = PBXGroup;
 			children = (
@@ -268,6 +362,7 @@
 				D2F0C2802B947C8B00683E4A /* Mu-nectingV2Tests */,
 				D2F0C28A2B947C8B00683E4A /* Mu-nectingV2UITests */,
 				D2F0C2682B947C8A00683E4A /* Products */,
+				D2E404EB2C6A2D52005B085D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -284,6 +379,9 @@
 		D2F0C2692B947C8A00683E4A /* Mu-nectingV2 */ = {
 			isa = PBXGroup;
 			children = (
+				D28FC3EE2C85E36900AFF58E /* GoogleService-Info.plist */,
+				D28FC3D42C7CAE2800AFF58E /* Mu-nectingV2.entitlements */,
+				D2E404E32C6A166A005B085D /* Util */,
 				D2E404CE2C57BD70005B085D /* Network */,
 				D2142A132BDEDF8D0079E5D0 /* Extensions */,
 				D2D593412BB338F80010D29D /* View */,
@@ -337,6 +435,26 @@
 			name = "Mu-nectingV2";
 			packageProductDependencies = (
 				D2E404D02C57C0AE005B085D /* Moya */,
+				D2E404EC2C6A2D52005B085D /* Kingfisher */,
+				D28FC3BC2C7CAD6B00AFF58E /* KakaoSDK */,
+				D28FC3BE2C7CAD6B00AFF58E /* KakaoSDKAuth */,
+				D28FC3C02C7CAD6B00AFF58E /* KakaoSDKCert */,
+				D28FC3C22C7CAD6B00AFF58E /* KakaoSDKCertCore */,
+				D28FC3C42C7CAD6B00AFF58E /* KakaoSDKCommon */,
+				D28FC3C62C7CAD6B00AFF58E /* KakaoSDKFriend */,
+				D28FC3C82C7CAD6B00AFF58E /* KakaoSDKFriendCore */,
+				D28FC3CA2C7CAD6B00AFF58E /* KakaoSDKNavi */,
+				D28FC3CC2C7CAD6B00AFF58E /* KakaoSDKShare */,
+				D28FC3CE2C7CAD6B00AFF58E /* KakaoSDKTalk */,
+				D28FC3D02C7CAD6B00AFF58E /* KakaoSDKTemplate */,
+				D28FC3D22C7CAD6B00AFF58E /* KakaoSDKUser */,
+				D28FC3E02C85E2AF00AFF58E /* FirebaseAnalytics */,
+				D28FC3E22C85E2AF00AFF58E /* FirebaseAnalyticsOnDeviceConversion */,
+				D28FC3E42C85E2AF00AFF58E /* FirebaseAnalyticsWithoutAdIdSupport */,
+				D28FC3E62C85E2AF00AFF58E /* FirebaseAppCheck */,
+				D28FC3E82C85E2AF00AFF58E /* FirebaseAppDistribution-Beta */,
+				D28FC3EA2C85E2C700AFF58E /* GoogleSignIn */,
+				D28FC3EC2C85E2C700AFF58E /* GoogleSignInSwift */,
 			);
 			productName = "Mu-nectingV2";
 			productReference = D2F0C2672B947C8A00683E4A /* Mu-nectingV2.app */;
@@ -412,6 +530,10 @@
 			mainGroup = D2F0C25E2B947C8A00683E4A;
 			packageReferences = (
 				D2E404CF2C57C0AE005B085D /* XCRemoteSwiftPackageReference "Moya" */,
+				D2E404EA2C6A2C62005B085D /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				D28FC3BB2C7CAC9100AFF58E /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */,
+				D28FC3D52C7CAF1300AFF58E /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				D28FC3DF2C85E2AF00AFF58E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = D2F0C2682B947C8A00683E4A /* Products */;
 			projectDirPath = "";
@@ -431,6 +553,7 @@
 			files = (
 				D2F0C2772B947C8B00683E4A /* LaunchScreen.storyboard in Resources */,
 				D2F0C2742B947C8B00683E4A /* Assets.xcassets in Resources */,
+				D28FC3EF2C85E36900AFF58E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,6 +587,7 @@
 				B39B07642B99C43400C20EB1 /* MapViewController.swift in Sources */,
 				D2142A152BDEDFA30079E5D0 /* UIColor.swift in Sources */,
 				D2D5934A2BB5A3A40010D29D /* SettingViewController.swift in Sources */,
+				D20852632CA1917700D3A1CB /* PlayListPage.swift in Sources */,
 				D2142A1D2BDEEC450079E5D0 /* SignUpViewController.swift in Sources */,
 				D2099E7C2BF35E8900C8D0F1 /* ListeningViewController.swift in Sources */,
 				D2E404DC2C57C752005B085D /* ExampleAPI.swift in Sources */,
@@ -478,20 +602,26 @@
 				D2C30A1F2C4E7AFF003C0CD4 /* PlayList.swift in Sources */,
 				D2C30A0E2C450A14003C0CD4 /* AddNewPlayListViewController.swift in Sources */,
 				D2D593482BB59FEC0010D29D /* ProfileViewController.swift in Sources */,
+				D2E404E52C6A16D4005B085D /* MusicHelper.swift in Sources */,
 				D27BFAD32C05FB1200C0504F /* PlayListViewController.swift in Sources */,
 				D2D593442BB339240010D29D /* MyPageTableViewCell.swift in Sources */,
 				D2E404D32C57C0CC005B085D /* BaseRepository.swift in Sources */,
 				D27BFAD72C0731E800C0504F /* ImageCollectionViewCell.swift in Sources */,
 				D2142A192BDEE5910079E5D0 /* EmailLoginViewController.swift in Sources */,
+				D28FC3DE2C85D8F200AFF58E /* LoginRepository.swift in Sources */,
 				D2E404D72C57C368005B085D /* BaseResponse.swift in Sources */,
-				D2D593462BB46CE00010D29D /* Music.swift in Sources */,
+				D28FC3DC2C85D8E400AFF58E /* LoginAPI.swift in Sources */,
+				D2E404E92C6A1EA4005B085D /* MiniPlayerView.swift in Sources */,
+				D2D593462BB46CE00010D29D /* Track.swift in Sources */,
 				D2F0C26B2B947C8A00683E4A /* AppDelegate.swift in Sources */,
+				D2E404E02C6A140B005B085D /* SpotifyImage.swift in Sources */,
 				D2F0C26D2B947C8A00683E4A /* SceneDelegate.swift in Sources */,
 				D2C30A192C4E69B2003C0CD4 /* UIView.swift in Sources */,
 				B39B07682B99C45300C20EB1 /* MyPageViewController.swift in Sources */,
 				D2C30A102C4513A4003C0CD4 /* AddSongViewController.swift in Sources */,
 				D27BFAD52C072EAF00C0504F /* HorizontalTableViewCell.swift in Sources */,
 				D2E404DA2C57C72C005B085D /* ExampleRepository.swift in Sources */,
+				D2E404E22C6A147C005B085D /* Artist.swift in Sources */,
 				D2E404D52C57C119005B085D /* BaseAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -664,6 +794,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Mu-nectingV2/Mu-nectingV2.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -690,6 +821,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Mu-nectingV2/Mu-nectingV2.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -825,6 +957,30 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		D28FC3BB2C7CAC9100AFF58E /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kakao/kakao-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.22.5;
+			};
+		};
+		D28FC3D52C7CAF1300AFF58E /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+		D28FC3DF2C85E2AF00AFF58E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.1.0;
+			};
+		};
 		D2E404CF2C57C0AE005B085D /* XCRemoteSwiftPackageReference "Moya" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Moya/Moya";
@@ -833,13 +989,121 @@
 				minimumVersion = 15.0.3;
 			};
 		};
+		D2E404EA2C6A2C62005B085D /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.12.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		D28FC3BC2C7CAD6B00AFF58E /* KakaoSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D28FC3BB2C7CAC9100AFF58E /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDK;
+		};
+		D28FC3BE2C7CAD6B00AFF58E /* KakaoSDKAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D28FC3BB2C7CAC9100AFF58E /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKAuth;
+		};
+		D28FC3C02C7CAD6B00AFF58E /* KakaoSDKCert */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D28FC3BB2C7CAC9100AFF58E /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKCert;
+		};
+		D28FC3C22C7CAD6B00AFF58E /* KakaoSDKCertCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D28FC3BB2C7CAC9100AFF58E /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKCertCore;
+		};
+		D28FC3C42C7CAD6B00AFF58E /* KakaoSDKCommon */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D28FC3BB2C7CAC9100AFF58E /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKCommon;
+		};
+		D28FC3C62C7CAD6B00AFF58E /* KakaoSDKFriend */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D28FC3BB2C7CAC9100AFF58E /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKFriend;
+		};
+		D28FC3C82C7CAD6B00AFF58E /* KakaoSDKFriendCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D28FC3BB2C7CAC9100AFF58E /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKFriendCore;
+		};
+		D28FC3CA2C7CAD6B00AFF58E /* KakaoSDKNavi */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D28FC3BB2C7CAC9100AFF58E /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKNavi;
+		};
+		D28FC3CC2C7CAD6B00AFF58E /* KakaoSDKShare */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D28FC3BB2C7CAC9100AFF58E /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKShare;
+		};
+		D28FC3CE2C7CAD6B00AFF58E /* KakaoSDKTalk */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D28FC3BB2C7CAC9100AFF58E /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKTalk;
+		};
+		D28FC3D02C7CAD6B00AFF58E /* KakaoSDKTemplate */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D28FC3BB2C7CAC9100AFF58E /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKTemplate;
+		};
+		D28FC3D22C7CAD6B00AFF58E /* KakaoSDKUser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D28FC3BB2C7CAC9100AFF58E /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKUser;
+		};
+		D28FC3E02C85E2AF00AFF58E /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D28FC3DF2C85E2AF00AFF58E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		D28FC3E22C85E2AF00AFF58E /* FirebaseAnalyticsOnDeviceConversion */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D28FC3DF2C85E2AF00AFF58E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsOnDeviceConversion;
+		};
+		D28FC3E42C85E2AF00AFF58E /* FirebaseAnalyticsWithoutAdIdSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D28FC3DF2C85E2AF00AFF58E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsWithoutAdIdSupport;
+		};
+		D28FC3E62C85E2AF00AFF58E /* FirebaseAppCheck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D28FC3DF2C85E2AF00AFF58E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAppCheck;
+		};
+		D28FC3E82C85E2AF00AFF58E /* FirebaseAppDistribution-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D28FC3DF2C85E2AF00AFF58E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAppDistribution-Beta";
+		};
+		D28FC3EA2C85E2C700AFF58E /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D28FC3D52C7CAF1300AFF58E /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		D28FC3EC2C85E2C700AFF58E /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D28FC3D52C7CAF1300AFF58E /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
 		D2E404D02C57C0AE005B085D /* Moya */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = D2E404CF2C57C0AE005B085D /* XCRemoteSwiftPackageReference "Moya" */;
 			productName = Moya;
+		};
+		D2E404EC2C6A2D52005B085D /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D2E404EA2C6A2C62005B085D /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

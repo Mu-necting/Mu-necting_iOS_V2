@@ -107,7 +107,7 @@ class MyPageTableViewCell: UITableViewCell {
         
     }
     
-    func addRecentMusic(music : [Music?]){
+    func addRecentMusic(music : [Track?]){
         
         NSLayoutConstraint.activate([
             

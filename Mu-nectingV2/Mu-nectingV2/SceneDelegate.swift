@@ -27,9 +27,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         //기본 설정값
         window?.rootViewController = tabBarController
         
-        //Tabbar 적용시 사용
-        //window?.rootViewController = TabBarViewController()
-        
         window?.makeKeyAndVisible()
     }
 

@@ -11,13 +11,13 @@ import AVFoundation
 
 class ListeningViewController: UIViewController {
     
-    var musicList : [Music]?
+    var musicList : [Track]?
     var selectedIndex : Int = 0 {
         didSet{
             selectedMusic = musicList![selectedIndex]
         }
     }
-    var selectedMusic : Music? {
+    var selectedMusic : Track? {
         didSet{
             updateUI()
         }
@@ -141,16 +141,16 @@ class ListeningViewController: UIViewController {
     
     private func setUpMusic(){
         musicList = [
-            Music(musicId: 0, title: "Pink + White", albumImage: "Demo3", musicTime: "3:00:00", singer: "Frank Ocean"),
-            Music(musicId: 1, title: "Believer", albumImage: "Demo2", musicTime: "3:00:00", singer: "Imagine Dragons"),
-            Music(musicId: 2, title: "Myself", albumImage: "Demo4", musicTime: "3:00:00", singer: "Post Malone"),
+//            Track(trackId: 0, title: "Pink + White", albumImage: "Demo3", musicTime: "3:00:00", singer: "Frank Ocean"),
+//            Track(trackId: 1, title: "Believer", albumImage: "Demo2", musicTime: "3:00:00", singer: "Imagine Dragons"),
+//            Track(trackId: 2, title: "Myself", albumImage: "Demo4", musicTime: "3:00:00", singer: "Post Malone"),
         ]
     }
     
     private func updateUI(){
-        artistLabel.text = selectedMusic?.singer
-        songTitleLabel.text = selectedMusic?.title
-        albumImageView.image = UIImage(named: (selectedMusic?.albumImage)!)
+        artistLabel.text = selectedMusic?.artists![0].artistName
+        songTitleLabel.text = selectedMusic?.trackTitle
+        albumImageView.image = UIImage(named: (selectedMusic?.albumImages![0].url)!)
     }
     
     private func setUpView(){

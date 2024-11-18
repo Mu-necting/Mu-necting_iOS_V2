@@ -15,7 +15,7 @@ class MyPageViewController: UIViewController {
     
     var user : User = User(userID: 1, nickName: "닉네임")
     // 테이블 뷰 데이터 소스
-    let myPageData = [ "프로필", "최근 탐색한 음악", "내가 업로드한 음악", "포스트말론 플리", "플레이리스트 추가하기"]
+    let myPageData = [ "프로필", "최근 탐색한 음악", "내가 업로드한 음악", "좋아요한 음악"]
     
     // UITableView 인스턴스
     let tableView: UITableView = {
@@ -23,12 +23,6 @@ class MyPageViewController: UIViewController {
         table.translatesAutoresizingMaskIntoConstraints = false
         table.separatorStyle = .none
         return table
-    }()
-    
-    let searchView : UIView = {
-        let v = UIView()
-        v.translatesAutoresizingMaskIntoConstraints = false
-        return v
     }()
     
     lazy var titleLabel : UILabel = {
@@ -40,6 +34,14 @@ class MyPageViewController: UIViewController {
         label.isUserInteractionEnabled = true
         
         return label
+    }()
+    
+    private let recentMusicLabel: UILabel = {
+          let label = UILabel()
+          label.text = "최근 탐색한 음악 >"
+          label.font = UIFont.systemFont(ofSize: 20, weight: .bold)
+          label.translatesAutoresizingMaskIntoConstraints = false
+          return label
     }()
     
     let headerView = UIView()
@@ -62,6 +64,7 @@ class MyPageViewController: UIViewController {
         // 테이블 뷰를 뷰 계층에 추가
         view.addSubview(tableView)
         
+        
         // 테이블 뷰에 대한 제약 조건 설정
         NSLayoutConstraint.activate([
             tableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 8),
@@ -77,8 +80,8 @@ class MyPageViewController: UIViewController {
         navigationController?.pushViewController(profileVC, animated: true)
     }
     
-    func openPlayList() {
-        let playListVC = PlaylistViewController()
+    func openPlayList(type : PlayListPage) {
+        let playListVC = PlaylistViewController(type: type)
         navigationController?.pushViewController(playListVC, animated: true)
     }
     
@@ -100,29 +103,19 @@ class MyPageViewController: UIViewController {
         // 네비게이션 바의 왼쪽에 타이틀 라벨 배치
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: titleLabel)
         
-        // 네비게이션 바의 오른쪽 아이템 설정
-        let searchButton = UIBarButtonItem(barButtonSystemItem: .search, target: self, action: #selector(searchButtonTapped))
-        
-        searchButton.tintColor = .black
         
         let settingButton = UIBarButtonItem(image: UIImage(systemName: "gearshape"), style: .plain, target: self, action: #selector(settingButtonTapped))
         settingButton.tintColor = .black
 
         
         // 오른쪽 버튼들을 배열로 만들어 네비게이션 바에 할당
-        self.navigationItem.rightBarButtonItems = [settingButton, searchButton]
+        self.navigationItem.rightBarButtonItems = [settingButton]
     }
     
     @objc func backButtonTapped() {
         // 뒤로 가기 버튼이 눌렸을 때 실행되는 메서드
         // UINavigationController의 popViewController 메서드를 사용하여 이전 화면으로 이동할 수 있음
         self.navigationController?.popViewController(animated: true)
-    }
-    
-    @objc private func searchButtonTapped() {
-        // 검색 버튼 액션 구현
-        let searchVC = SearchViewController()
-        navigationController?.pushViewController(searchVC, animated: true)
     }
     
     @objc func settingButtonTapped() {
@@ -145,9 +138,6 @@ extension MyPageViewController : UITableViewDataSource, UITableViewDelegate {
         if indexPath.row == 1{
             let cell = tableView.dequeueReusableCell(withIdentifier: HorizontalImageTableViewCell.identifier, for: indexPath) as! HorizontalImageTableViewCell
             let item = myPageData[indexPath.row]
-            
-            cell.textLabel?.text = item
-            cell.textLabel?.font = UIFont.systemFont(ofSize: 18, weight: .semibold)
             cell.images = [UIImage(named: "Demo4")!, UIImage(named: "Demo4")!, UIImage(named: "Demo4")!, UIImage(named: "Demo4")!]
             
             tableCell = cell
@@ -204,11 +194,11 @@ extension MyPageViewController : UITableViewDataSource, UITableViewDelegate {
             settingProfile()
             
         case "최근 탐색한 음악":
-            openPlayList()
-        case "포스트말론 플리":
-            openPlayList()
-        case "플레이리스트 추가하기" :
-            openAddPlayList()
+            openPlayList(type: .recentSearch)
+        case "내가 업로드한 음악":
+            openPlayList(type: .upload)
+        case "좋아요한 음악" :
+            openPlayList(type: .like)
         default:
             break
         }

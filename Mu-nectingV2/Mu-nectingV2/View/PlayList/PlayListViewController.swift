@@ -11,18 +11,9 @@ import UIKit
 class PlaylistViewController: UIViewController, PlayListEditModalDelegate {
     private let scrollView = UIScrollView()
     private let contentView = UIView()
-    private let albumImageView = AlbumImageView(imageName: "Demo4")
-    private let playAllButton = UIButton()
+   
     var playListTable = PlayListTableView()
-    
-    var countMusic : UILabel = {
-        let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 16, weight: .semibold)
-        label.textColor = UIColor(hexCode: "888888")
-        return label
-    }()
-    
-    private let stackView = UIStackView()
+    var type : PlayListPage
     
     lazy var headerButton: UIBarButtonItem = {
         let button = UIBarButtonItem(image: UIImage(systemName: "ellipsis"), style: .plain, target: self, action: #selector(onTapHeaderButton))
@@ -30,11 +21,20 @@ class PlaylistViewController: UIViewController, PlayListEditModalDelegate {
         return button
     }()
     
-    var musicList : [Music] = []
+    var musicList : [Track] = []
+    
+    init(type: PlayListPage) {
+        self.type = type
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-      
+        
         let backBarButtonItem = UIBarButtonItem(title: "취소", style: .plain, target: self, action: nil)
         backBarButtonItem.tintColor = .black  // 색상 변경
         self.navigationItem.backBarButtonItem = backBarButtonItem
@@ -45,7 +45,14 @@ class PlaylistViewController: UIViewController, PlayListEditModalDelegate {
     }
     
     private func setupHeader(){
-        title = "포스트말론 플리"
+        if type == .like {
+            title = "좋아요한 음악"
+        }else if type == .recentSearch{
+            title = "최근 탐색한 음악"
+        }else if type == .upload{
+            title = "내가 업로드한 음악"
+        }
+
         navigationItem.rightBarButtonItem = headerButton
     }
     
@@ -59,31 +66,6 @@ class PlaylistViewController: UIViewController, PlayListEditModalDelegate {
         // ContentView 설정
         contentView.translatesAutoresizingMaskIntoConstraints = false
         scrollView.addSubview(contentView)
-        
-    
-        // 앨범 이미지 설정
-        albumImageView.translatesAutoresizingMaskIntoConstraints = false
-        contentView.addSubview(albumImageView)
-        
-        stackView.axis = .horizontal
-        
-        contentView.addSubview(stackView)
-        
-        // 전체 재생 버튼 설정
-        playAllButton.setTitle("전체 재생", for: .normal)
-        playAllButton.setTitleColor(.white, for: .normal)
-        playAllButton.titleLabel?.font = UIFont.systemFont(ofSize: 16, weight: .semibold)
-        playAllButton.backgroundColor = UIColor(hexCode: "BB00CB")
-        playAllButton.layer.cornerRadius = 18
-        playAllButton.addTarget(self, action: #selector(playAllButtonTapped), for: .touchUpInside)
-        playAllButton.translatesAutoresizingMaskIntoConstraints = false
-        
-        stackView.addArrangedSubview(playAllButton)
-        
-        countMusic.text = "\(musicList.count)곡"
-        stackView.addArrangedSubview(countMusic)
-        
-        stackView.translatesAutoresizingMaskIntoConstraints = false
         
         // 테이블 뷰 설정
         playListTable.translatesAutoresizingMaskIntoConstraints = false
@@ -104,35 +86,14 @@ class PlaylistViewController: UIViewController, PlayListEditModalDelegate {
             contentView.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor),
             contentView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor),
             contentView.widthAnchor.constraint(equalTo: scrollView.widthAnchor),
-            
-            
-            // 앨범 이미지 제약 조건
-            albumImageView.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.5),
-            albumImageView.heightAnchor.constraint(equalTo: albumImageView.widthAnchor, multiplier: 1),
-            albumImageView.centerXAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerXAnchor),
-            albumImageView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 4),
-            
-            stackView.topAnchor.constraint(equalTo: albumImageView.bottomAnchor, constant: 24),
-            stackView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 20),
-            stackView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -20),
-            stackView.heightAnchor.constraint(equalToConstant: 36),
-            
-            // 전체 재생 버튼 제약 조건
-            playAllButton.heightAnchor.constraint(equalToConstant: 36),
-            playAllButton.leadingAnchor.constraint(equalTo: stackView.leadingAnchor, constant: 0),
-            playAllButton.trailingAnchor.constraint(equalTo: countMusic.leadingAnchor, constant: -24),
-            playAllButton.topAnchor.constraint(equalTo: stackView.topAnchor, constant: 0),
-            
-            countMusic.topAnchor.constraint(equalTo: stackView.topAnchor, constant: 0),
-            countMusic.widthAnchor.constraint(equalToConstant: 30),
-            countMusic.trailingAnchor.constraint(equalTo: stackView.trailingAnchor, constant: 0),
+
             
             // 테이블 뷰 제약 조건
-            playListTable.topAnchor.constraint(equalTo: playAllButton.bottomAnchor, constant: 12),
+            playListTable.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 12),
             playListTable.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -4),
             playListTable.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
             playListTable.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
-            playListTable.heightAnchor.constraint(equalToConstant: 600)
+            playListTable.heightAnchor.constraint(equalToConstant: 1000)
         ])
     }
     
@@ -157,7 +118,7 @@ class PlaylistViewController: UIViewController, PlayListEditModalDelegate {
                 // 삭제 api 요청 보내기
                 self.navigationController?.popViewController(animated: true)
             })
-                    
+            
             sheet.addAction(UIAlertAction(title: "취소", style: .cancel){
                 _ in
             })

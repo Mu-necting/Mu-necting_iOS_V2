@@ -10,7 +10,7 @@ import Foundation
 struct PlayList : Codable {
     let playListId : Int?
     let title : String?
-    let musicList : [Music?]
+    let musicList : [Track?]
     
     enum CodingKeys: String, CodingKey {
         case playListId, title, musicList
