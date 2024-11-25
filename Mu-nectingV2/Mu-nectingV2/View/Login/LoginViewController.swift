@@ -18,17 +18,17 @@ class LoginViewController: UIViewController, ASAuthorizationControllerDelegate {
         return label
     }()
     private let thinLineView1: UIView = {
-         let view = UIView()
-         view.backgroundColor = UIColor(hexCode: "6C6C6C")
-         view.translatesAutoresizingMaskIntoConstraints = false
-         return view
-     }()
+        let view = UIView()
+        view.backgroundColor = UIColor(hexCode: "6C6C6C")
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
     private let thinLineView2: UIView = {
-         let view = UIView()
-         view.backgroundColor = UIColor(hexCode: "6C6C6C")
-         view.translatesAutoresizingMaskIntoConstraints = false
-         return view
-     }()
+        let view = UIView()
+        view.backgroundColor = UIColor(hexCode: "6C6C6C")
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
     let kakaoButton = UIButton()
     let googleButton = UIButton()
     let emailButton = UIButton()
@@ -51,7 +51,7 @@ class LoginViewController: UIViewController, ASAuthorizationControllerDelegate {
         view.addSubview(titleLabel)
         view.addSubview(thinLineView1)
         view.addSubview(thinLineView2)
-
+        
         
         kakaoButton.setTitle("카카오톡으로 로그인", for: .normal)
         kakaoButton.setTitleColor(.black, for: .normal)
@@ -139,9 +139,19 @@ class LoginViewController: UIViewController, ASAuthorizationControllerDelegate {
                 }
                 else {
                     print("loginWithKakaoTalk() success.")
+                    LoginRepository.shared.socialLogin(type: "KAKAO", token: (oauthToken?.idToken)!){
+                        (result) in
+                        switch result{
+                        case .success(let data):
+                            print(data)
                     
-                    //do something
-                    _ = oauthToken
+                        case .failure(.failure(message: let message)):
+                            print(message)
+                        case .failure(.networkFail(let error)):
+                            print(error)
+                            print("networkFail in loginWithKakaoTalk")
+                        }
+                    }
                 }
             }
         }
@@ -153,34 +163,44 @@ class LoginViewController: UIViewController, ASAuthorizationControllerDelegate {
             }
             else {
                 print("loginWithKakaoAccount() success.")
+                LoginRepository.shared.socialLogin(type: "KAKAO", token: (oauthToken?.idToken)!){
+                    (result) in
+                    switch result{
+                    case .success(let data):
+                        print(data)
                 
-                //do something
-                _ = oauthToken
+                    case .failure(.failure(message: let message)):
+                        print(message)
+                    case .failure(.networkFail(let error)):
+                        print(error)
+                        print("networkFail in loginWithKakaoTalk")
+                    }
+                }
             }
         }
     }
     
     @objc private func googleLoginTapped() {
         guard let clientID = FirebaseApp.app()?.options.clientID else { return }
-
+        
         // Create Google Sign In configuration object.
         let config = GIDConfiguration(clientID: clientID)
         GIDSignIn.sharedInstance.configuration = config
-
+        
         // Start the sign in flow!
         GIDSignIn.sharedInstance.signIn(withPresenting: self) { [unowned self] result, error in
-          guard error == nil else {
-              return
-          }
-
-          guard let user = result?.user,
-            let idToken = user.idToken?.tokenString
-          else {
-            return
-          }
-
-//          let credential = GoogleAuthProvider.credential(withIDToken: idToken,
-//                                                         accessToken: user.accessToken.tokenString)
+            guard error == nil else {
+                return
+            }
+            
+            guard let user = result?.user,
+                  let idToken = user.idToken?.tokenString
+            else {
+                return
+            }
+            
+            //          let credential = GoogleAuthProvider.credential(withIDToken: idToken,
+            //                                                         accessToken: user.accessToken.tokenString)
         }
     }
     

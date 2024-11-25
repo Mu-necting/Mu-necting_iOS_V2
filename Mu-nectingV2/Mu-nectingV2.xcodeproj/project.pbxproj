@@ -19,6 +19,7 @@
 		D2142A172BDEE3D70079E5D0 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2142A162BDEE3D70079E5D0 /* UILabel.swift */; };
 		D2142A192BDEE5910079E5D0 /* EmailLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2142A182BDEE5910079E5D0 /* EmailLoginViewController.swift */; };
 		D2142A1D2BDEEC450079E5D0 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2142A1C2BDEEC450079E5D0 /* SignUpViewController.swift */; };
+		D2525E702CEB65DE001AC2C9 /* type.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2525E6F2CEB65DE001AC2C9 /* type.swift */; };
 		D27BFAD02C05E42B00C0504F /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27BFACF2C05E42B00C0504F /* SearchViewController.swift */; };
 		D27BFAD32C05FB1200C0504F /* PlayListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27BFAD22C05FB1200C0504F /* PlayListViewController.swift */; };
 		D27BFAD52C072EAF00C0504F /* HorizontalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27BFAD42C072EAF00C0504F /* HorizontalTableViewCell.swift */; };
@@ -111,6 +112,7 @@
 		D2142A162BDEE3D70079E5D0 /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
 		D2142A182BDEE5910079E5D0 /* EmailLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailLoginViewController.swift; sourceTree = "<group>"; };
 		D2142A1C2BDEEC450079E5D0 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		D2525E6F2CEB65DE001AC2C9 /* type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = type.swift; sourceTree = "<group>"; };
 		D27BFACF2C05E42B00C0504F /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		D27BFAD22C05FB1200C0504F /* PlayListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListViewController.swift; sourceTree = "<group>"; };
 		D27BFAD42C072EAF00C0504F /* HorizontalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalTableViewCell.swift; sourceTree = "<group>"; };
@@ -246,6 +248,7 @@
 			children = (
 				D28FC3DB2C85D8E400AFF58E /* LoginAPI.swift */,
 				D28FC3DD2C85D8F200AFF58E /* LoginRepository.swift */,
+				D2525E6F2CEB65DE001AC2C9 /* type.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -609,6 +612,7 @@
 				D27BFAD72C0731E800C0504F /* ImageCollectionViewCell.swift in Sources */,
 				D2142A192BDEE5910079E5D0 /* EmailLoginViewController.swift in Sources */,
 				D28FC3DE2C85D8F200AFF58E /* LoginRepository.swift in Sources */,
+				D2525E702CEB65DE001AC2C9 /* type.swift in Sources */,
 				D2E404D72C57C368005B085D /* BaseResponse.swift in Sources */,
 				D28FC3DC2C85D8E400AFF58E /* LoginAPI.swift in Sources */,
 				D2E404E92C6A1EA4005B085D /* MiniPlayerView.swift in Sources */,

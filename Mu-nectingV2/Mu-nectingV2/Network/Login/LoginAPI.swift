@@ -22,7 +22,10 @@ extension LoginAPI : BaseAPI {
             parameters["socialType"] = socialType
             parameters["idToken"] = idToken
             
-            return .requestParameters(parameters: parameters, encoding: URLEncoding.httpBody)
+            print(socialType)
+            print(idToken)
+            
+            return .requestParameters(parameters: parameters, encoding: JSONEncoding.default)
             
         }
     }
