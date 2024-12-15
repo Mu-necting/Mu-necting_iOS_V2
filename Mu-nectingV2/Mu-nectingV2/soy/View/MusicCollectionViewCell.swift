@@ -56,7 +56,7 @@ class MusicCollectionViewCell: UICollectionViewCell {
         
         // 앨범 커버
         albumImageView = UIImageView()
-        //albumImageView.image = UIImage(named: "Demo") // 이미지 설정
+        //albumImageView.image = UIImage(named: "Dummy") // 이미지 설정
         albumImageView.contentMode = .scaleAspectFill // 이미지 비율 유지
         albumImageView.clipsToBounds = true
         albumImageView.translatesAutoresizingMaskIntoConstraints = false

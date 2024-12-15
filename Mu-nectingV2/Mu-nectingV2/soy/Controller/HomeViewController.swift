@@ -50,10 +50,10 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     var commentButton = UIButton()
     var commentCountLabel = UILabel()
     
-    var images: [UIImage] = [
-        UIImage(named: "Demo")!,
-        UIImage(named: "Demo2")!,
-        UIImage(named: "Demo3")!
+    var images: [UIImage?] = [
+        UIImage(named: "Dummy"),
+        UIImage(named: "Dummy2"),
+        UIImage(named: "Dummy3")
     ]
     
     var titles: [String] = ["곡제목1", "곡제목2", "곡제목3"]
@@ -135,7 +135,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     //배경블러효과
     func configureBackground() {
-        viewBackgroundImage.image = UIImage(named: "Demo")
+        viewBackgroundImage.image = UIImage(named: "Dummy")
         viewBackgroundImage.contentMode = .scaleAspectFill
         view.addSubview(viewBackgroundImage)
         
@@ -252,7 +252,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     //앨범커버이미지
     func configureAlbumCoverBackgroundImage() {
-        albumBackgroundImage.image = UIImage(named: "Demo")
+        albumBackgroundImage.image = UIImage(named: "Dummy")
         albumBackgroundImage.contentMode = .scaleAspectFill // 이미지가 뷰에 꽉 차게
         albumBackgroundImage.clipsToBounds = true // 이미지 뷰의 경계를 넘어서는 부분을 잘라냄
         
@@ -283,7 +283,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     //앨범커버이미지
     func configureAlbumCoverImage() {
-        albumImage.image = UIImage(named: "Demo")
+        albumImage.image = UIImage(named: "Dummy")
         albumImage.contentMode = .scaleAspectFill // 이미지가 뷰에 꽉 차게
         albumImage.clipsToBounds = true // 이미지 뷰의 경계를 넘어서는 부분을 잘라냄
         

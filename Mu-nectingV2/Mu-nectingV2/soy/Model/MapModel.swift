@@ -15,16 +15,16 @@ class MapModel {
     
     var genres = ["전체", "Rock", "Pop", "Jazz", "Classical", "Hip-hop"]
     var images: [UIImage] = [
-        UIImage(named: "Demo")!,
-        UIImage(named: "Demo2")!,
-        UIImage(named: "Demo3")!,
-        UIImage(named: "Demo")!,
-        UIImage(named: "Demo2")!,
-        UIImage(named: "Demo3")!,
-        UIImage(named: "Demo")!,
-        UIImage(named: "Demo2")!,
-        UIImage(named: "Demo3")!,
-        UIImage(named: "Demo")!
+        UIImage(named: "Dummy")!,
+        UIImage(named: "Dummy2")!,
+        UIImage(named: "Dummy3")!,
+        UIImage(named: "Dummy")!,
+        UIImage(named: "Dummy2")!,
+        UIImage(named: "Dummy3")!,
+        UIImage(named: "Dummy")!,
+        UIImage(named: "Dummy2")!,
+        UIImage(named: "Dummy3")!,
+        UIImage(named: "Dummy")!
     ]
     
     var titles = ["곡제목1", "곡제목2", "곡제목3","곡제목1", "곡제목2", "곡제목3","곡제목1", "곡제목2", "곡제목3","곡제목1"]

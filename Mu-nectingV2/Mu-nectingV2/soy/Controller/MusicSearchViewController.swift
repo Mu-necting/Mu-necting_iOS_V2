@@ -12,9 +12,9 @@ class MusicSearchViewController: UIViewController, UITableViewDelegate, UITableV
     let searchBar = UISearchBar()
     let tableView = UITableView()
     var images: [UIImage] = [
-        UIImage(named: "Demo")!,
-        UIImage(named: "Demo2")!,
-        UIImage(named: "Demo3")!
+        UIImage(named: "Dummy")!,
+        UIImage(named: "Dummy2")!,
+        UIImage(named: "Dummy3")!
     ]
     
     var titles: [String] = ["곡제목1", "곡제목2", "곡제목3"]
@@ -155,7 +155,7 @@ class MusicSearchViewController: UIViewController, UITableViewDelegate, UITableV
         
         
         // 이미지 저장
-        /*if let albumCoverImage = UIImage(named: "Demo") {
+        /*if let albumCoverImage = UIImage(named: "Dummy") {
             if let imageData = albumCoverImage.jpegData(compressionQuality: 1.0) {
                 userDefaults.set(imageData, forKey: "albumCover")
             }
