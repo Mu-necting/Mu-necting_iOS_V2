@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		B39B07602B99C41100C20EB1 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39B075F2B99C41100C20EB1 /* TabBarViewController.swift */; };
-		B39B07622B99C42700C20EB1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39B07612B99C42700C20EB1 /* HomeViewController.swift */; };
-		B39B07642B99C43400C20EB1 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39B07632B99C43400C20EB1 /* MapViewController.swift */; };
 		B39B07662B99C44200C20EB1 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39B07652B99C44200C20EB1 /* UploadViewController.swift */; };
 		B39B07682B99C45300C20EB1 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39B07672B99C45300C20EB1 /* MyPageViewController.swift */; };
 		D20852632CA1917700D3A1CB /* PlayListPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20852622CA1917700D3A1CB /* PlayListPage.swift */; };
@@ -101,8 +99,6 @@
 
 /* Begin PBXFileReference section */
 		B39B075F2B99C41100C20EB1 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
-		B39B07612B99C42700C20EB1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		B39B07632B99C43400C20EB1 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		B39B07652B99C44200C20EB1 /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 		B39B07672B99C45300C20EB1 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 		D20852622CA1917700D3A1CB /* PlayListPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListPage.swift; sourceTree = "<group>"; };
@@ -401,8 +397,6 @@
 				D2F0C2752B947C8B00683E4A /* LaunchScreen.storyboard */,
 				D2F0C2782B947C8B00683E4A /* Info.plist */,
 				B39B075F2B99C41100C20EB1 /* TabBarViewController.swift */,
-				B39B07612B99C42700C20EB1 /* HomeViewController.swift */,
-				B39B07632B99C43400C20EB1 /* MapViewController.swift */,
 				B39B07652B99C44200C20EB1 /* UploadViewController.swift */,
 			);
 			path = "Mu-nectingV2";
@@ -590,12 +584,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2142A112BDEDF1A0079E5D0 /* LoginViewController.swift in Sources */,
-				B39B07622B99C42700C20EB1 /* HomeViewController.swift in Sources */,
 				D2C30A1D2C4E75D3003C0CD4 /* AlbumImageView.swift in Sources */,
 				B39B07662B99C44200C20EB1 /* UploadViewController.swift in Sources */,
 				D2C30A1B2C4E7068003C0CD4 /* PlayListEditViewController.swift in Sources */,
 				D2C30A232C4E7EFF003C0CD4 /* PlayListTableView.swift in Sources */,
-				B39B07642B99C43400C20EB1 /* MapViewController.swift in Sources */,
 				D2142A152BDEDFA30079E5D0 /* UIColor.swift in Sources */,
 				D2D5934A2BB5A3A40010D29D /* SettingViewController.swift in Sources */,
 				D20852632CA1917700D3A1CB /* PlayListPage.swift in Sources */,

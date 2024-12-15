@@ -21,7 +21,7 @@ class TabBarViewController: UITabBarController {
         mapVC.tabBarItem = UITabBarItem(title: "지도", image: UIImage(named:"Map"), tag: 1)
         
         
-        let uploadVC = UploadViewController()
+        let uploadVC = MusicUploadViewController()
         uploadVC.tabBarItem = UITabBarItem(title: "업로드", image: UIImage(named:"Upload"), tag: 2)
         
         let mypageVC = MyPageViewController()
