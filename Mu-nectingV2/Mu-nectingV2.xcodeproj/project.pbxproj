@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -158,6 +158,10 @@
 		D2F0C28B2B947C8B00683E4A /* Mu_nectingV2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mu_nectingV2UITests.swift; sourceTree = "<group>"; };
 		D2F0C28D2B947C8B00683E4A /* Mu_nectingV2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mu_nectingV2UITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		B31671D82D0F2C3F0008FE5E /* soy */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = soy; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		D2F0C2642B947C8A00683E4A /* Frameworks */ = {
@@ -382,6 +386,7 @@
 		D2F0C2692B947C8A00683E4A /* Mu-nectingV2 */ = {
 			isa = PBXGroup;
 			children = (
+				B31671D82D0F2C3F0008FE5E /* soy */,
 				D28FC3EE2C85E36900AFF58E /* GoogleService-Info.plist */,
 				D28FC3D42C7CAE2800AFF58E /* Mu-nectingV2.entitlements */,
 				D2E404E32C6A166A005B085D /* Util */,
@@ -434,6 +439,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				B31671D82D0F2C3F0008FE5E /* soy */,
 			);
 			name = "Mu-nectingV2";
 			packageProductDependencies = (
