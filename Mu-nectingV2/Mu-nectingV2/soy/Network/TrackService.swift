@@ -1,10 +1,3 @@
-//
-//  TrackService.swift
-//  Mu-nectingV2
-//
-//  Created by seohuibaek on 12/16/24.
-//
-
 import Foundation
 import Alamofire
 import Moya
@@ -17,7 +10,7 @@ class TrackService {
             switch result {
             case .success(let response):
                 do {
-                    let apiResponse = try JSONDecoder().decode(ApiResponse.self, from: response.data)
+                    let apiResponse = try JSONDecoder().decode(APIResponse.self, from: response.data)
                     if apiResponse.isSuccess {
                         completion(.success(apiResponse.data))
                     } else {
