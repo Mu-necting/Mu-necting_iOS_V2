@@ -43,7 +43,6 @@
 		D28FC3E92C85E2AF00AFF58E /* FirebaseAppDistribution-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = D28FC3E82C85E2AF00AFF58E /* FirebaseAppDistribution-Beta */; };
 		D28FC3EB2C85E2C700AFF58E /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = D28FC3EA2C85E2C700AFF58E /* GoogleSignIn */; };
 		D28FC3ED2C85E2C700AFF58E /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D28FC3EC2C85E2C700AFF58E /* GoogleSignInSwift */; };
-		D28FC3EF2C85E36900AFF58E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D28FC3EE2C85E36900AFF58E /* GoogleService-Info.plist */; };
 		D2C30A0E2C450A14003C0CD4 /* AddNewPlayListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C30A0D2C450A14003C0CD4 /* AddNewPlayListViewController.swift */; };
 		D2C30A102C4513A4003C0CD4 /* AddSongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C30A0F2C4513A4003C0CD4 /* AddSongViewController.swift */; };
 		D2C30A142C4E3C78003C0CD4 /* PlayListEditModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C30A132C4E3C78003C0CD4 /* PlayListEditModalViewController.swift */; };
@@ -116,7 +115,6 @@
 		D28FC3D42C7CAE2800AFF58E /* Mu-nectingV2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Mu-nectingV2.entitlements"; sourceTree = "<group>"; };
 		D28FC3DB2C85D8E400AFF58E /* LoginAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAPI.swift; sourceTree = "<group>"; };
 		D28FC3DD2C85D8F200AFF58E /* LoginRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRepository.swift; sourceTree = "<group>"; };
-		D28FC3EE2C85E36900AFF58E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D2C30A0D2C450A14003C0CD4 /* AddNewPlayListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewPlayListViewController.swift; sourceTree = "<group>"; };
 		D2C30A0F2C4513A4003C0CD4 /* AddSongViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSongViewController.swift; sourceTree = "<group>"; };
 		D2C30A132C4E3C78003C0CD4 /* PlayListEditModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListEditModalViewController.swift; sourceTree = "<group>"; };
@@ -383,7 +381,6 @@
 			isa = PBXGroup;
 			children = (
 				B31671D82D0F2C3F0008FE5E /* soy */,
-				D28FC3EE2C85E36900AFF58E /* GoogleService-Info.plist */,
 				D28FC3D42C7CAE2800AFF58E /* Mu-nectingV2.entitlements */,
 				D2E404E32C6A166A005B085D /* Util */,
 				D2E404CE2C57BD70005B085D /* Network */,
@@ -558,7 +555,6 @@
 			files = (
 				D2F0C2772B947C8B00683E4A /* LaunchScreen.storyboard in Resources */,
 				D2F0C2742B947C8B00683E4A /* Assets.xcassets in Resources */,
-				D28FC3EF2C85E36900AFF58E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
